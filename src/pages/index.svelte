@@ -10,7 +10,7 @@
   import Uhh from '../components/Uhh.svelte';
   import Test from '../components/Test.svelte';
   import help from '../help.js';
-  import Cayo from 'cayo';
+  import Cayo from 'cayo/component';
 
 
   help();
@@ -23,7 +23,7 @@
 <Some />
 
 I'm index howdy ok<br>
-<a href="/howdy/">Howdy</a><br>
+<a href="/howdy/" class="some">Howdy</a><br>
 <a href="/hey/" class="red">Hey</a>
 <a href="/some/page/" class="red">Some</a>
 <Uhh />
@@ -41,6 +41,9 @@ I'm index howdy ok<br>
 </slot>
 
 <style>
+  :global(.some) {
+    color: red;
+  }
   .red {
     color: red;
   }

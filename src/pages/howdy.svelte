@@ -1,5 +1,5 @@
 <script>
-  import Cayo from 'cayo';
+  import Cayo from 'cayo/component';
   // console.log('howdy', Cool);
 </script>
 

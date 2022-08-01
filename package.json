@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.31",
+    "cayo": "file:../cayo",
     "svelte-preprocess": "^4.9.8",
     "vite": "^2.6.14"
   }
