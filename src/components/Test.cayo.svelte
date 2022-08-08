@@ -1,5 +1,5 @@
 <script>
 
 </script>
-ok
+I am a runtime instance of Test.cayo.svelte
 <!-- <slot></slot> -->

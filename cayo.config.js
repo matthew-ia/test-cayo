@@ -32,5 +32,5 @@ export default {
   //     port: '5005',
   //   },
   // },
-  base: '/cayo/'
+  // base: '/cayo/'
 }
