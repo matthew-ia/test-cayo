@@ -18,6 +18,10 @@ export default {
   // css: {
   //   internal: false,
   // },
+  // src: './beans',
+  // pages: './beans/pages',
+  debug: true,
+  // tom: 'foolery',
   templateName: '__template',
   // FIXME: this is uhhhh very broken
   // viteConfig: {
