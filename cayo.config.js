@@ -18,7 +18,7 @@ export default {
   // css: {
   //   internal: false,
   // },
-  templateFileName: '__layout',
+  templateName: '__template',
   // FIXME: this is uhhhh very broken
   // viteConfig: {
   //   base: '/vite/',
