@@ -12,7 +12,6 @@
   import help from '../help.js';
   import Cayo from 'cayo/component';
 
-
   help();
 
 
@@ -26,7 +25,7 @@ I'm index howdy ok<br>
 <a href="/howdy/" class="some">Howdy</a><br>
 <a href="/hey/" class="red">Hey</a>
 <a href="/some/page/" class="red">Some</a>
-<Uhh />
+<!-- <Uhh /> -->
 
 <!-- <Cayo name="Test" object={{ some: 'what?$staticlink$'}}><div>Default Content</div></Cayo>
 
@@ -40,12 +39,16 @@ I'm index howdy ok<br>
   <script src="/index.js" data-cayo-entry />
 </slot>
 
-<style>
+<style lang="scss">
+  $test: red;
   :global(.some) {
-    color: red;
+    color: $test;
   }
   .red {
-    color: red;
+    color: $test;
+    &:visited {
+      color: $test;
+    }
   }
   img {
     width: 50px;

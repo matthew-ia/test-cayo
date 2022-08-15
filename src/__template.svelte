@@ -9,6 +9,7 @@
     %cayo.head%
   </head>
   <body class="hey">
+    <div class="test">testing template preprocessor</div>
     <!-- 
       TODO: Show how to condtionally render any of these pieces based on dev vs. prod
       E.g., I need to remove head from prod, but want it there in dev
@@ -18,3 +19,11 @@
   </body>
   
 </html>
+
+
+<style lang="scss">
+  $test: red;
+  .test {
+    color: $test;
+  }
+</style>

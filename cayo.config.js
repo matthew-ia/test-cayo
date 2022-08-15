@@ -2,7 +2,8 @@
 // vite config example
 // import { defineConfig } from 'vite'
 // import { svelte } from '@sveltejs/vite-plugin-svelte'
-// import sveltePreprocess from 'svelte-preprocess'
+import sveltePreprocess from 'svelte-preprocess';
+// import image from '@rollup/plugin-image';
 // const viteConfig = defineConfig({
 //   // root: './.cayo/',
 //   plugins: [svelte({
@@ -15,26 +16,30 @@
 
 export default {
   // projectRoot: '.',
-  // css: {
-  //   internal: false,
-  // },
   // src: './beans',
-  // pages: './beans/pages',
   debug: true,
+  css: {
+    internal: true,
+  },
   // tom: 'foolery',
+  // foolery: 'tom',
   templateName: '__template',
-  // FIXME: this is uhhhh very broken
-  // viteConfig: {
-  //   base: '/vite/',
-  //   plugins: [svelte({
-  //     preprocess: sveltePreprocess({ preserve: ['json'] }),
-  //     compilerOptions: {
-  //       hydratable: true,
-  //     },
-  //   })],
-  //   server: {
-  //     port: '5005',
-  //   },
+  svelte: {
+    preprocess: [
+      sveltePreprocess(),
+    ],
+    compilerOptions: {
+      preserveComments: false,
+      dev: false,
+    }
+  },
+  // rollup: {
+  //   plugins: [image({ dom: true })],
   // },
+  vite: {
+    server: {
+      port: '5005',
+    }
+  }
   // base: '/cayo/'
 }
