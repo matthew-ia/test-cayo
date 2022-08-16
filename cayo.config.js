@@ -18,9 +18,9 @@ export default {
   // projectRoot: '.',
   // src: './beans',
   debug: true,
-  css: {
-    internal: true,
-  },
+  // css: {
+  //   internal: true,
+  // },
   // tom: 'foolery',
   // foolery: 'tom',
   templateName: '__template',

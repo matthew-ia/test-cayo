@@ -1,6 +1,13 @@
 <script>
 console.log('howdy');
 </script>
-I am a runtime instance of Test.cayo.svelte?
-<div />
+
+<p>I am a runtime instance of Test.cayo.svelte?</p>
 <!-- <slot></slot> -->
+
+<style lang="scss">
+  $test: blue;
+  p {
+    color: $test;
+  }
+</style>
