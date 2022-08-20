@@ -19,7 +19,7 @@
 </script>
 
 <Test />
-<Some />
+<!-- <Some /> -->
 
 I'm index howdy ok<br>
 <a href="/howdy/" class="some">Howdy</a><br>
