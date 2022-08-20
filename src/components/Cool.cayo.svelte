@@ -7,9 +7,9 @@
 <!-- <div>{beans}</div> -->
 <p>I prob change do I??</p>
 
-<style lang="scss">
+<!-- <style lang="scss">
   $test: #15bd36;
   p {
     color: $test;
   }
-</style>
+</style> -->

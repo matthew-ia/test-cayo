@@ -17,8 +17,8 @@
 
   // resolveImports('some');
 </script>
-
-<Test />
+<Cayo src="./some/nested/Cool.cayo.svelte" cool="very cool" />
+<!-- <Test /> -->
 <!-- <Some /> -->
 
 I'm index howdy ok<br>

@@ -23,6 +23,9 @@ export default {
   // },
   // tom: 'foolery',
   // foolery: 'tom',
+  build: {
+    // assetsDir: 'stuff',
+  },
   templateName: '__template',
   svelte: {
     preprocess: [

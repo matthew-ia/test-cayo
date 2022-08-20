@@ -5,9 +5,9 @@ console.log('howdy');
 <p>I am a runtime instance of Test.cayo.svelte??</p>
 <!-- <slot></slot> -->
 
-<style lang="scss">
+<!-- <style lang="scss">
   $test: blue;
   p {
     color: $test;
   }
-</style>
+</style> -->

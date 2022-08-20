@@ -21,9 +21,9 @@
 </html>
 
 
-<style lang="scss">
+<!-- <style lang="scss">
   $test: red;
   .test {
     color: $test;
   }
-</style>
+</style> -->
