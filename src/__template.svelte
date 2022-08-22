@@ -8,7 +8,7 @@
     %cayo.css%    
     %cayo.head%
   </head>
-  <body class="hey">
+  <body>
     <div class="test">testing template preprocessor</div>
     <!-- 
       TODO: Show how to condtionally render any of these pieces based on dev vs. prod

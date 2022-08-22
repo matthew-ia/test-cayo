@@ -12,17 +12,18 @@
   import help from '../help.js';
   import Cayo from 'cayo/component';
 
-  help();
+  // help();
 
 
   // resolveImports('some');
 </script>
-<Cayo src="./some/nested/Cool.cayo.svelte" cool="very cool" />
+<Cayo src="./some/nested/Cool.cayo.svelte" cool="very cool" do={() => console.log('im not gonna work')} />
+<Cayo src="" />
 <!-- <Test /> -->
 <!-- <Some /> -->
 
 I'm index howdy ok<br>
-<a href="/howdy/" class="some">Howdy</a><br>
+<a href="/howdy/" class="some global">Howdy</a><br>
 <a href="/hey/" class="red">Hey</a>
 <a href="/some/page/" class="red">Some</a>
 <!-- <Uhh /> -->

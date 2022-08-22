@@ -1,4 +1,6 @@
-// console.log("I'm main");
+import help from './nestedAsset/help.js';
+// import './style.scss';
+import './style.css';
 
 const cb = (node) => { 
   console.log('im side effecting');
@@ -8,10 +10,10 @@ const cb = (node) => {
 
 function replaceContents ( node ) {
   node.innerHTML = '';
+  console.log('im side effecting');
   return node;
 }
 
-import { default as renderComponents } from './cayo-runtime.js';
-document.addEventListener('DOMContentLoaded', () => {
-  renderComponents(replaceContents);
-});
+help();
+
+renderCayos(replaceContents);
