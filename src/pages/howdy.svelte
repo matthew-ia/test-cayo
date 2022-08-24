@@ -16,7 +16,7 @@ howdyyy
 <!-- <Cayo src={"../components/some/Cool.cayo.svelte"} /> -->
 
 <slot name="entry">
-  <script src="/main2.js" data-cayo-entry />
+  <script src="main2.js" data-cayo-entry />
 </slot>
 
 <style>

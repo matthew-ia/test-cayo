@@ -1,2 +1,2 @@
 // console.log("I'm main also");
-import './stye.scss';
+import './style.scss';

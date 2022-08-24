@@ -17,9 +17,9 @@
 
   // resolveImports('some');
 </script>
-<Cayo src="./some/nested/Cool.cayo.svelte" cool="very cool" do={() => console.log('im not gonna work')} />
-<Cayo src="" />
-<!-- <Test /> -->
+<Cayo src="./some/nested/Cool.cayo.svelte" cool="very cool" do={() => console.log('im not gonna work')}>
+  I'm not cool
+</Cayo>
 <!-- <Some /> -->
 
 I'm index howdy ok<br>
@@ -37,7 +37,7 @@ I'm index howdy ok<br>
 <img src="/images/app-icon.png" alt="">
 
 <slot name="entry">
-  <script src="/index.js" data-cayo-entry />
+  <script src="nested/entry/index.js" data-cayo-entry />
 </slot>
 
 <style lang="scss">

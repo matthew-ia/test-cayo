@@ -2,6 +2,7 @@
 // vite config example
 // import { defineConfig } from 'vite'
 // import { svelte } from '@sveltejs/vite-plugin-svelte'
+import resolve from '@rollup/plugin-node-resolve';
 import sveltePreprocess from 'svelte-preprocess';
 // import image from '@rollup/plugin-image';
 // const viteConfig = defineConfig({
@@ -36,10 +37,13 @@ export default {
       dev: false,
     }
   },
-  // rollup: {
-  //   plugins: [image({ dom: true })],
-  // },
+  rollup: {
+    plugins: [resolve()],
+  },
   vite: {
+    rollupOptions: {
+      plugins: [resolve()],
+    },
     server: {
       port: '5005',
     }

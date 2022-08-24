@@ -1,6 +1,6 @@
-import help from './nestedAsset/help.js';
+import help from '../../nestedAsset/help.js';
 import { format } from 'date-fns';
-import './style.scss';
+import '../../style.scss';
 // import './nestedAsset/help.js';
 // import '/public.css';
 // // import './style.css';

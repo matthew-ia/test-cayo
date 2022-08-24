@@ -14,5 +14,5 @@ yessir
 </style>
 
 <slot name="entry">
-  <script src="/index.js" data-cayo-entry />
+  <script src="index.js" data-cayo-entry />
 </slot>
