@@ -37,16 +37,13 @@ export default {
       dev: false,
     }
   },
-  rollup: {
-    plugins: [resolve()],
-  },
-  vite: {
-    rollupOptions: {
-      plugins: [resolve()],
-    },
-    server: {
-      port: '5005',
-    }
-  }
+  // vite: {
+  //   rollupOptions: {
+  //     plugins: [resolve()],
+  //   },
+  //   server: {
+  //     port: '5005',
+  //   }
+  // }
   // base: '/cayo/'
 }

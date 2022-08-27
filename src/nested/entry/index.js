@@ -1,4 +1,5 @@
 import help from '../../nestedAsset/help.js';
+import help2 from '../../help.js';
 import { format } from 'date-fns';
 import '../../style.scss';
 // import './nestedAsset/help.js';
@@ -18,6 +19,7 @@ function replaceContents ( node ) {
 }
 
 help();
+help2();
 console.log('c');
 console.log(format(new Date(), "'Today is a' eeee"));
 
