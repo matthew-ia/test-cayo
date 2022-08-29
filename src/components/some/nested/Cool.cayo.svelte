@@ -5,4 +5,10 @@
 <script>
   export let cool = 'not cool';
 </script>
-<p>I'm {cool}</p>
+<p class="hell-yeah">I'm {cool}</p>
+
+<style>
+  .hell-yeah {
+    color: red;
+  }
+</style>

@@ -37,7 +37,7 @@ I'm index howdy ok<br>
 <img src="/images/app-icon.png" alt="">
 
 <slot name="entry">
-  <script src="beans/index.js" data-cayo-entry />
+  <script src="index.js" data-cayo-entry />
 </slot>
 
 <style lang="scss">
