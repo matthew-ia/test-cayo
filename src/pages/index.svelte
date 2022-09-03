@@ -17,7 +17,7 @@
 
   // resolveImports('some');
 </script>
-<Cayo src="./some/nested/Cool.cayo.svelte" cool="very cool" do={() => console.log('im not gonna work')}>
+<Cayo src="./some/nested/Cool.cayo.sveltee" cool="very cool" do={() => console.log('im not gonna work')}>
   I'm not cool
 </Cayo>
 <!-- <Some /> -->
