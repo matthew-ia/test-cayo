@@ -10,6 +10,9 @@
   </head>
   <body>
     <div class="test">testing template preprocessor</div>
+    {#if process.env.NODE_ENV === 'development'}
+      hell yeah
+    {/if}
     <!-- 
       TODO: Show how to condtionally render any of these pieces based on dev vs. prod
       E.g., I need to remove head from prod, but want it there in dev

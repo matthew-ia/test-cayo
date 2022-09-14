@@ -11,13 +11,14 @@
   import Test from '../components/Test.svelte';
   import help from '../help.js';
   import Cayo from 'cayo/component';
-
-  // help();
+  import Docs from '../components/docs.md';
 
 
   // resolveImports('some');
 </script>
-<Cayo src="./some/nested/Cool.cayo.sveltee" cool="very cool" do={() => console.log('im not gonna work')}>
+<Docs />
+
+<Cayo src="./some/nested/Cool.cayo.svelte" cool="very cool" do={() => console.log('im not gonna work')}>
   I'm not cool
 </Cayo>
 <!-- <Some /> -->
@@ -27,18 +28,21 @@ I'm index howdy ok<br>
 <a href="/hey/" class="red">Hey</a>
 <a href="/some/page/" class="red">Some</a>
 <!-- <Uhh /> -->
-
+<lol>
+  I'm svelte-preprocess
+  <img src="@base/images/app-icon.png" alt="">
+  <slot>
+    <script src="index.js" data-cayo-entry />
+  </slot>
+  testReplace
+</lol>
 <!-- <Cayo name="Test" object={{ some: 'what?$staticlink$'}}><div>Default Content</div></Cayo>
 
 <Cayo name="Cool" beans='ayo'>Whaaat</Cayo>
 <Cayo name="Cool" beans='beeeeaaaaasnnss' />
 <Cayo name="Cool" beans='NOT BEANS' /> -->
 
-<img src="/images/app-icon.png" alt="">
 
-<slot name="entry">
-  <script src="index.js" data-cayo-entry />
-</slot>
 
 <style lang="scss">
   $test: red;

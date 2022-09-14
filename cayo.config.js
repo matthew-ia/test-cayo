@@ -4,6 +4,7 @@
 // import { svelte } from '@sveltejs/vite-plugin-svelte'
 import resolve from '@rollup/plugin-node-resolve';
 import sveltePreprocess from 'svelte-preprocess';
+import { mdsvex } from "mdsvex";
 // import image from '@rollup/plugin-image';
 // const viteConfig = defineConfig({
 //   // root: './.cayo/',
@@ -14,6 +15,8 @@ import sveltePreprocess from 'svelte-preprocess';
 //     },
 //   })],
 // });
+console.log('node env', process.env.NODE_ENV);
+const url = process.env.NODE_ENV === 'development' ? '/' : 'default/path/to/'
 
 export default {
   // projectRoot: '.',
@@ -29,8 +32,15 @@ export default {
   },
   templateName: '__template',
   svelte: {
+    extensions: ['.svelte', '.md'],
     preprocess: [
-      sveltePreprocess(),
+      sveltePreprocess({
+        markupTagName: 'lol',
+        replace: [['@base/', url]]
+      }),
+      mdsvex(
+        { extensions: ['.md'] }
+      ),
     ],
     compilerOptions: {
       preserveComments: false,
