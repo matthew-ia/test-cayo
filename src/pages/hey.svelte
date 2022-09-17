@@ -1,5 +1,5 @@
 <script>
-  import Cayo from 'cayo/component'
+  import { Cayo } from 'cayo'
 </script>
 
 <Cayo src="Cool.cayo.svelte" />

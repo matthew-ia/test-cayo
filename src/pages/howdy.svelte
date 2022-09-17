@@ -1,5 +1,5 @@
 <script>
-  import Cayo from 'cayo/component';
+  import { Cayo } from 'cayo';
   // console.log('howdy', Cool);
   const str = "some/Cool.cayo.svelte";
   const str2 = "some/Cool.cayo.svelte";

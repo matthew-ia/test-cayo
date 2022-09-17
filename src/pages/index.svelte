@@ -4,13 +4,11 @@
   };
 </script>
 <script>
-  // import Cayo from '#cayo/components/Cayo.svelte';
-  // import { resolveImports } from '#cayo/utils.js';
   import Some from '../components/Some.svelte';
   import Uhh from '../components/Uhh.svelte';
   import Test from '../components/Test.svelte';
   import help from '../help.js';
-  import Cayo from 'cayo/component';
+  import { Cayo, Entry } from 'cayo';
   import Docs from '../components/docs.md';
 
 
@@ -31,9 +29,10 @@ I'm index howdy ok<br>
 <lol>
   I'm svelte-preprocess
   <img src="@base/images/app-icon.png" alt="">
-  <slot>
+  <Entry src="index.js" />
+  <!-- <slot>
     <script src="index.js" data-cayo-entry />
-  </slot>
+  </slot> -->
   testReplace
 </lol>
 <!-- <Cayo name="Test" object={{ some: 'what?$staticlink$'}}><div>Default Content</div></Cayo>

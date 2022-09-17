@@ -36,7 +36,7 @@ export default {
     preprocess: [
       sveltePreprocess({
         markupTagName: 'lol',
-        replace: [['@base/', url]]
+        replace: [['@base/', url], ['testReplace', 'replaceWorks']]
       }),
       mdsvex(
         { extensions: ['.md'] }
