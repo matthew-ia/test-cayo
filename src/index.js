@@ -10,7 +10,7 @@ import data from './test.json';
 const cb = (node) => { 
   console.log('im side effecting');
   console.log(node);
-  return node; 
+  return node;
 }
 
 function replaceContents ( node ) {
