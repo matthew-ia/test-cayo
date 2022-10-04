@@ -1,8 +1,8 @@
-<script context="module">
+<!-- <script context="module">
   export const meta = {
     title: 'Home',
   };
-</script>
+</script> -->
 <script>
   import Some from '../components/Some.svelte';
   import Uhh from '../components/Uhh.svelte';
@@ -10,14 +10,23 @@
   import help from '../help.js';
   import { Cayo, Entry } from 'cayo';
   import Docs from '../components/docs.md';
+  import Lib from '../../lib/lib.svelte';
 
 
   // resolveImports('some');
 </script>
+<!-- <svelte:head>
+  <title>Home</title>
+</svelte:head> -->
 <Docs />
 
-<Cayo src="./some/nested/Cool.cayo.svelte" cool="very cool" do={() => console.log('im not gonna work')}>
+<Lib />
+
+<Cayo src="Cool.cayo.svelte" cool="very cool" do={() => console.log('im not gonna work')}>
   I'm not cool
+</Cayo>
+<Cayo src="../src/components/Huh.cayo.svelte" cool="even cooler" do={() => console.log('im not gonna work')}>
+  I'm super not cool
 </Cayo>
 <!-- <Some /> -->
 

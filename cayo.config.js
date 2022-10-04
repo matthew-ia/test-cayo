@@ -30,6 +30,7 @@ export default {
   build: {
     // assetsDir: 'stuff',
   },
+  components: '../lib',
   templateName: '__template',
   svelte: {
     extensions: ['.svelte', '.md'],
